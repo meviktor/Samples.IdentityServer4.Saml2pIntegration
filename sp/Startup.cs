@@ -35,16 +35,16 @@ namespace sp
             builder.AddInMemoryClients(Config.GetClients())
                 .AddSamlPlugin(options =>
                 {
-                    options.Licensee = "";
-                    options.LicenseKey = "";
+                    options.Licensee = "DEMO";
+                    options.LicenseKey = "eyJTb2xkRm9yIjowLjAsIktleVByZXNldCI6NiwiU2F2ZUtleSI6ZmFsc2UsIkxlZ2FjeUtleSI6ZmFsc2UsIlJlbmV3YWxTZW50VGltZSI6IjAwMDEtMDEtMDFUMDA6MDA6MDAiLCJhdXRoIjoiREVNTyIsImV4cCI6IjIwMTktMTEtMDhUMDE6MDA6MDMuNDMyMTYzKzAwOjAwIiwiaWF0IjoiMjAxOS0xMC0wOVQwMDowMDowMyIsIm9yZyI6IkRFTU8iLCJhdWQiOjJ9.oAEHvlhdsHfe8nVsxFxYT0daP+BBjgFImrA41Ge8PAvzr/PzAT9sEuEvEDPLXrJ1w16mzToMnCTXdIMfYAhpWICaeQyknJGSE2bOj9a4u00smzZfWW3+7lH9M5sGiGgppsZOrrV9OsnyaUiBbfUDNh1inB2wDwbHjzee/M7keVW/9uHdSYIY/Z0wcFvECS+/iDHAZx99XC9x3CogqMtPaA1W2AQsjXL97Dao9iYKkBk4XA+dTSMLHXeIbCvii/0/BSwE+waENKbhVe1P1KXNzzvOrHQrV6jbGIk4KeYAXWlxoj12xuQZ0YZTUUVQESqioCz/Kccj4a8Wxnkmun3rr2mtjIFznM+RMPmnL2Qrtc+POqZ3jbXiKQA1tFTmuLpGRb/A/X7SOgFz3cljwc0OAiF+006pUutIKttGoNwbQPxI7A3kFmTBCjY6uSpOFnTwo+1+nzJ7JYShL5wknapdU4kvdial6b2iyhaPLwa0KnpnrNyO+omxDgHGQ32+OZtMxhuaoQg54EbKvob/tP3Ik52rLbIctcgVB7oici+BnezpYN28cNaQgO/Z3pQKSY6t15Vp/kNsllvcyUS+sZPRMoZKpb6j+yLwXil3I9mV3TJmr902LPU3G/arz/p+JfyUX36/ugciHWP9XsIw0bTYA68I6+MngrCl5ZaDp5Oz4Cw=";
                     options.WantAuthenticationRequestsSigned = false;
                 })
                 .AddInMemoryServiceProviders(Config.GetServiceProviders());
 
             services.AddAuthentication()
                 .AddSaml2p("saml2p", options => {
-                    options.Licensee = "";
-                    options.LicenseKey = "";
+                    options.Licensee = "DEMO";
+                    options.LicenseKey = "eyJTb2xkRm9yIjowLjAsIktleVByZXNldCI6NiwiU2F2ZUtleSI6ZmFsc2UsIkxlZ2FjeUtleSI6ZmFsc2UsIlJlbmV3YWxTZW50VGltZSI6IjAwMDEtMDEtMDFUMDA6MDA6MDAiLCJhdXRoIjoiREVNTyIsImV4cCI6IjIwMTktMTEtMDhUMDE6MDA6MDMuNDMyMTYzKzAwOjAwIiwiaWF0IjoiMjAxOS0xMC0wOVQwMDowMDowMyIsIm9yZyI6IkRFTU8iLCJhdWQiOjJ9.oAEHvlhdsHfe8nVsxFxYT0daP+BBjgFImrA41Ge8PAvzr/PzAT9sEuEvEDPLXrJ1w16mzToMnCTXdIMfYAhpWICaeQyknJGSE2bOj9a4u00smzZfWW3+7lH9M5sGiGgppsZOrrV9OsnyaUiBbfUDNh1inB2wDwbHjzee/M7keVW/9uHdSYIY/Z0wcFvECS+/iDHAZx99XC9x3CogqMtPaA1W2AQsjXL97Dao9iYKkBk4XA+dTSMLHXeIbCvii/0/BSwE+waENKbhVe1P1KXNzzvOrHQrV6jbGIk4KeYAXWlxoj12xuQZ0YZTUUVQESqioCz/Kccj4a8Wxnkmun3rr2mtjIFznM+RMPmnL2Qrtc+POqZ3jbXiKQA1tFTmuLpGRb/A/X7SOgFz3cljwc0OAiF+006pUutIKttGoNwbQPxI7A3kFmTBCjY6uSpOFnTwo+1+nzJ7JYShL5wknapdU4kvdial6b2iyhaPLwa0KnpnrNyO+omxDgHGQ32+OZtMxhuaoQg54EbKvob/tP3Ik52rLbIctcgVB7oici+BnezpYN28cNaQgO/Z3pQKSY6t15Vp/kNsllvcyUS+sZPRMoZKpb6j+yLwXil3I9mV3TJmr902LPU3G/arz/p+JfyUX36/ugciHWP9XsIw0bTYA68I6+MngrCl5ZaDp5Oz4Cw=";
 
                     options.IdentityProviderOptions = new IdpOptions
                     {
